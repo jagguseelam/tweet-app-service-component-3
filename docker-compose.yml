@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+   
+   tweet-service:
+    image: tweet-application-service
+    build: tweet-service/.
+    ports:
+      - "8021:8021"
+
+   tweet-service-ui:
+    image: tweet-service-ui
+    build: tweet-service-ui/
+    ports:
+      - 3000:80
+    links:
+      - tweet-service

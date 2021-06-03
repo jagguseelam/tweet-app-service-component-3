@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: tweet-service
+  
+server:
+  port: 8021
+
+amazon:
+  access:
+    key: 
+    secret-key: 
+  region: 
+  end-point:
+    url: 
+
+logging:
+  file: 
+    name: C:/Mid Tier/tweet-service/tweet-service-logs/tweet-app.log
